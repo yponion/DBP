@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            /* 기본 스타일 (화이트 모드) */
+            background-color: white;
+            color: black;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        /* 다크 모드 스타일 */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: black;
+                color: white;
+            }
+
+            .btn {
+                background-color: #0056b3;
+            }
+
+            .btn-primary:hover {
+                background-color: #007bff;
+            }
+
+            .form-floating input {
+                border: 1px solid #666;
+                background-color: #333;
+                color: white;
+            }
+
+            a {
+                color: white;
+            }
+        }
+
+        /* 공통 스타일 */
+        .form-signin {
+            width: 100%;
+            max-width: 330px;
+            padding: 15px;
+            margin: auto;
+        }
+
+        .form-floating {
+            margin-bottom: 10px;
+        }
+
+        .form-floating input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            display: block;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: #fff;
+            color: #000;
+        }
+
+        .form-floating label {
+            font-size: 15px;
+        }
+
+        .btn {
+            color: white;
+            background-color: #007bff;
+            border: none;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .sign {
+            text-align: right;
+        }
+
+
+
+        .form-text {
+            display: flex;
+            align-items: center;
+        }
+
+        .form-floating div {
+            display: flex;
+        }
+
+        #floatingResidentFront {
+            flex: 5;
+        }
+
+        #floatingResidentBack {
+            flex: 1;
+        }
+
+        .form-text {
+            text-align: center;
+            justify-content: center;
+        }
+
+        #hypen {
+            flex: 2;
+        }
+
+        #star {
+            flex: 4;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="form-signin">
+        <form>
+            <h1>Sign up</h1>
+
+            <!-- 이름 -->
+            <div class="form-floating">
+                <label for="floatingUsername">이름</label>
+                <input type="text" id="floatingUsername" placeholder="홍길동">
+            </div>
+            
+            <br>
+
+            <!-- 주민등록번호 -->
+            <div class="form-floating">
+                <label for="floatingResidentFront">주민등록번호</label>
+                <div class="floatingResidentDiv">
+                    <input type="text" id="floatingResidentFront" placeholder="901010" maxlength="6" pattern="[0-9]{6}">
+                    <a id="hypen" class="form-text">-</a>
+                    <input type="text" id="floatingResidentBack" placeholder="1" maxlength="1" pattern="[1-4]">
+                    <a id="star" class="form-text">*&nbsp;&nbsp;*&nbsp;&nbsp;*&nbsp;&nbsp;*&nbsp;&nbsp;*&nbsp;&nbsp;*</a>
+                </div>
+            </div>
+            
+            <br>
+
+            <!-- 이메일 -->
+            <div class="form-floating">
+                <label for="floatingEmail">이메일</label>
+                <input type="email" id="floatingEmail" placeholder="name@example.com">
+            </div>
+            
+            <br>
+
+            <!-- 비밀번호 -->
+            <div class="form-floating">
+                <label for="floatingPassword">비밀번호</label>
+                <input type="password" id="floatingPassword" placeholder="Password">
+            </div>
+            
+            <br>
+
+            <!-- 비밀번호 확인 -->
+            <div class="form-floating">
+                <label for="floatingConfirmPassword">비밀번호 확인</label>
+                <input type="password" id="floatingConfirmPassword" placeholder="Confirm Password">
+            </div>
+            
+            <br>
+
+            <!-- 전화번호 -->
+            <div class="form-floating">
+                <label for="floatingPhone">전화번호</label>
+                <input type="tel" id="floatingPhone" placeholder="010-1234-5678" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}">
+            </div>
+            
+            <br>
+
+
+            <!-- 회원가입 버튼 -->
+            <button class="btn btn-primary" type="submit">회원가입</button>
+        </form>
+        <!-- 로그인 페이지로 돌아가는 링크 -->
+        <div class="sign">
+            <a href="/signin.html">back</a>
+        </div>
+    </main>
+
+</body>
+
+</html>
