@@ -222,6 +222,28 @@ h1 {
 
 /* 회원가입 css */
 
+/* projectList css */
+
+#projectList{
+    width: 50%;
+}
+.inner {
+    width: 100%;
+    color: #333336;
+    border-radius: 10px;
+    text-align: center;
+    margin: 50px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 5px 5px 5px #d3d3d3;
+}
+
+.inner:hover {
+    transform: translateY(-5px) translateX(5px);
+}
+
+/* projectList css */
+
 /* 프로젝트 생성 페이지 테스트 */
 
 .project-body {
