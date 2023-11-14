@@ -221,3 +221,91 @@ h1 {
 }
 
 /* 회원가입 css */
+
+/* 프로젝트 생성 페이지 테스트 */
+
+
+
+.project-body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+.project-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.project-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.project-button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.project-button:hover {
+    background-color: #4cae4c;
+}
+
+/* 캘린더 및 팀원 추가 섹션에 대한 추가 스타일링 */
+.calendar, .team-member-addition {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.hidden {
+    display: none;
+}
+
+.project-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.projects-grid {
+    margin-top: 60px; /* 프로젝트 헤더의 높이에 맞춰 조정 */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.project-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-align: center;
+}
+
+/* 프로젝트 생성 페이지 테스트 */
