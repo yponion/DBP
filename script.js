@@ -40,3 +40,18 @@ function deleteProject(projectId, element) {
         element.parentElement.remove();
     }
 }
+
+
+/* project-detail 자바스크립트 */
+
+document.getElementById('add-team-member').addEventListener('click', function() {
+    // 팀원 추가 로직
+});
+
+document.getElementById('post-announcement').addEventListener('click', function() {
+    // 공지사항 게시 로직
+});
+
+document.getElementById('add-todo').addEventListener('click', function() {
+    // 할 일 추가 로직
+});
