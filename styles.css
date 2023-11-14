@@ -224,8 +224,6 @@ h1 {
 
 /* 프로젝트 생성 페이지 테스트 */
 
-
-
 .project-body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -269,17 +267,6 @@ h1 {
     background-color: #4cae4c;
 }
 
-/* 캘린더 및 팀원 추가 섹션에 대한 추가 스타일링 */
-.calendar, .team-member-addition {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-.hidden {
-    display: none;
-}
 
 .project-header {
     position: fixed;
