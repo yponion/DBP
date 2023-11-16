@@ -5,7 +5,7 @@ if (document.getElementById('create-project-form')) {
         const title = document.getElementById('project-title').value;
         // 서버로 데이터 전송하는 로직을 여기에 추가 (예: AJAX 요청)
         // 폼 제출 후 메인 페이지로 리디렉션
-        window.location.href = 'index.html';
+        window.location.href = 'projectList.html';
     });
 }
 
@@ -18,13 +18,21 @@ if (document.getElementById('created-projects-container')) {
     const projects = [
         { id: 1, title: "프로젝트 1" },
         { id: 2, title: "프로젝트 2" },
+        { id: 1, title: "프로젝트 1" },
+        { id: 2, title: "프로젝트 2" },
+        { id: 1, title: "프로젝트 1" },
+        { id: 2, title: "프로젝트 2" },
+        { id: 1, title: "프로젝트 1" },
+        { id: 2, title: "프로젝트 2" },
+        { id: 1, title: "프로젝트 1" },
+        { id: 2, title: "프로젝트 2" },
         // ... 추가 프로젝트
     ];
 
     const projectsContainer = document.getElementById('created-projects-container');
     projects.forEach(project => {
         const projectElement = document.createElement('div');
-        projectElement.classList.add('project-item');
+        projectElement.classList.add('projects-inner');
         projectElement.innerHTML = `
             <h3>${project.title}</h3>
             <button onclick="deleteProject(${project.id}, this)">삭제</button>

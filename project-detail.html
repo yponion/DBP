@@ -1,38 +1,77 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="kr">
+
 <head>
     <meta charset="UTF-8">
     <title>프로젝트 상세</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="project-detail-container">
-        <div class="project-header">
-            <div class="project-title">프로젝트 이름</div>
-            <div class="project-team">
-                팀원 수: <span id="team-member-count">0</span>
-                <button id="write-post">글쓰기</button>
-            </div>
+
+    <header>
+        <div>Logo</div>
+        <div>
+            <ul>
+                <li><a href="/projectList.html">프로젝트</a></li>
+                <li><a href="#">캘린더</a></li>
+            </ul>
+        </div>
+        <div class="header-btnbtn">
+            <input class="btn" type="button" value="로그아웃">
+            <input type="button" value="내정보">
+        </div>
+    </header>
+
+    <main class="project-detail-container">
+        <h1>프로젝트 이름</h1>
+
+        <div class="project-detail-inner">
+            <h3>프로젝트 진척도</h3>
+            <progress id="progress" value="50" max="100"></progress>
         </div>
 
-        <div class="project-section">
-            <div class="project-progress">
-                <h3>프로젝트 진척도</h3>
-                <progress id="progress" value="50" max="100"></progress>
-            </div>
-
-            <div class="project-announcements">
+        <div class="project-detail-inner">
+            <div class="project-detail-h3btn">
                 <h3>공지사항</h3>
-                <!-- 공지사항 목록 -->
+                <div>
+                    <input class="btn" type="button" value="공지쓰기">
+                </div>
             </div>
-
-            <div class="project-todos">
-                <h3>할 일</h3>
-                <!-- 할 일 목록 -->
-            </div>
+            <p>공지사항 목록</p>
         </div>
-    </div>
+
+        <div class="project-detail-inner">
+            <div class="project-detail-h3btn">
+                <h3>할 일</h3>
+                <div>
+                    <input class="btn" type="button" value="할일추가">
+                </div>
+            </div>
+            <p>할 일 목록</p>
+            <p>할 일 목록</p>
+            <p>할 일 목록</p>
+            <p>할 일 목록</p>
+            <p>할 일 목록</p>
+            <p>할 일 목록</p>
+            <p>할 일 목록</p>
+            <p>할 일 목록</p>
+            <p>할 일 목록</p>
+            <p>할 일 목록</p>
+            <p>할 일 목록</p>
+            <p>할 일 목록</p>
+            <p>할 일 목록</p>
+            <p>할 일 목록</p>
+            <p>할 일 목록</p>
+            <p>할 일 목록</p>
+            <p>할 일 목록</p>
+            <p>할 일 목록</p>
+            <p>할 일 목록</p>
+            <p>할 일 목록</p>
+        </div>
+    </main>
 
     <script src="script.js"></script>
 </body>
+
 </html>
