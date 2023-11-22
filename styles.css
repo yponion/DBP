@@ -198,6 +198,24 @@ h1 {
 .projects-inner:hover {
     transform: translateY(-3px) translateX(3px);
 }
+
+#project-add{
+    position: fixed;
+    display: flex;
+    width: 80px;
+    height: 80px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    border: 1px solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 70px;
+    color: #00ADB5;
+    z-index: 9;
+}
 /* projectList css] */
 
 /* [프로젝트 상세 페이지 */
